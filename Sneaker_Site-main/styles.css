@@ -1,0 +1,400 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 19px;
+}
+
+/* Page Container Styles */
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+/* Navigation Tooltip Styling */
+#fp-nav ul li .fp-tooltip {
+  color: white;
+  background-color: #222;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+#fp-nav.fp-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 75px;
+  position: fixed;
+}
+
+/* Product Page Styling, needed for modal */
+#productPage {
+  position: relative;
+}
+
+/* Coloring the navbar icons white */
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+#product-slider .active h3,
+#product-slider .active button {
+  display: block;
+}
+
+/* Modal Styling */
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+}
+/* Used to prevent the carousel from stretching the screen */
+.owl-carousel {
+  overflow: hidden;
+}
+
+/* Used to scale down the home image. You can remove this. */
+img {
+  width: 65%;
+  height: 65%;
+  max-width: 40vw;
+  margin-bottom: 8%;
+  margin-right: 15%;
+}
+
+/* PLEASE START YOUR STYLES UNDERNEATH THIS */
+
+/* Landing */
+#homePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-details {
+  display: block;
+  letter-spacing: 0.5px;
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 2%;
+  margin-left: 11.5%;
+}
+h1 {
+  color: #464646;
+  font-size: 55px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.span-form {
+  color: #ed2d34;
+  margin-bottom: 20px;
+}
+
+.landing {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url(banner.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.landing-p {
+  color: #464646;
+  margin-bottom: 60px;
+  letter-spacing: 0.5px;
+  font-size: 17px;
+  font-family: "roboto", sans-serif;
+}
+
+a {
+  margin-bottom: 5%;
+  letter-spacing: 0.5px;
+}
+.btn {
+  text-decoration: none;
+  color: #464646;
+  padding: 15px 48px;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.btn:hover {
+  background: #ed2d34;
+  border-color: #ed2d34;
+  color: #ffffff;
+  animation-delay: 0.8s;
+  padding: 15px 48px;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*Form*/
+#contactPage {
+  background: url(https://megaone.acrothemes.com/product-hotspot/images/contact_bg.jpg);
+  background-size: cover;
+  width: 95%;
+}
+.form {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.form-container.details {
+  grid-column: 1;
+  grid-row: 1;
+  display: block;
+}
+
+.page-heading {
+  color: #464646;
+  font-size: 55px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 20%;
+}
+
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.span-page-header {
+  color: #ed2d34;
+}
+
+.contact-details-container {
+  font-size: 17px;
+  font-family: "roboto", sans-serif;
+  color: #464646;
+}
+
+.contact-details-description {
+  margin-left: 20%;
+  color: #464646;
+  letter-spacing: 0.5px;
+  font-size: 17px;
+  font-family: "roboto", sans-serif;
+  width: 60%;
+}
+
+#Social {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+h4 {
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 20%;
+}
+
+.icon1 {
+  margin-bottom: 30px;
+}
+
+.icon2 {
+  margin-bottom: 30px;
+}
+
+.icon3 {
+  margin-bottom: 30px;
+}
+
+#icon1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #464646;
+}
+
+#icon2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #464646;
+}
+
+#icon3 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #464646;
+}
+
+.address {
+  display: flex;
+}
+
+.no {
+  color: #464646;
+  list-style: none;
+  font-size: 16px;
+  margin-left: 1%;
+  align-items: center;
+  font-family: "roboto", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.contact-input {
+  padding: 7%;
+  width: 200%;
+}
+
+#full_name {
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  padding-left: 0;
+  color: #464646;
+  font-size: 16px;
+  font-family: "roboto", sans-serif;
+}
+
+#contact_no {
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  padding-left: 0;
+  color: #464646;
+  font-size: 16px;
+  font-family: "roboto", sans-serif;
+}
+
+#email {
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  padding-left: 0;
+  color: #464646;
+  font-size: 16px;
+  font-family: "roboto", sans-serif;
+}
+
+#message {
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  margin-left: 2%;
+  padding: 15%;
+  color: #464646;
+  font-size: 16px;
+  font-family: "roboto", sans-serif;
+}
+
+.button-form {
+  text-decoration: none;
+  color: #ed2d34;
+  text-transform: uppercase;
+  padding: 15px;
+  width: 200%;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid #ed2d34;
+}
+
+.button-form:hover {
+  background: #ed2d34;
+  border-color: #ed2d34;
+  color: white;
+  animation-delay: 0.8s;
+  padding: 15px;
+  width: 200%;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.social-links {
+  margin-left: 22%;
+  margin-bottom: 17%;
+}
+
+#icon_1 {
+  font-size: 16px;
+  padding: 15px 18px;
+}
+
+#icon_2 {
+  font-size: 16px;
+  margin-left: 2%;
+}
+
+#icon_3 {
+  font-size: 16px;
+  margin-left: 2%;
+}
+
+#icon_4 {
+  font-size: 16px;
+  margin-left: 2%;
+}
+
+.fab {
+  color: #464646;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 15px 15px;
+}
+
+.fab:hover {
+  background: #ed2d34;
+  color: white;
+  border-radius: 50px;
+  animation-delay: 0.8s;
+  font-size: 16px;
+  padding: 15px 15px;
+}
+
+#testimonialPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1348) {
+  body {
+    text-align: center;
+    overflow-y: hidden;
+  }
+}
