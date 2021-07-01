@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://pbs.twimg.com/media/DVMT-6OXcAE2rZY.jpg);
+  background-size: 100%;
+  /* background-size: cover; */
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 7%; */
+  width: 45%;
+}
+
+button {
+  border-width: 8px;
+  margin: 6px;
+  width: 8%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+.poke-img {
+  display: flex;
+  justify-content: center;
+  margin-left: 40%;
+  width: 15%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  color: #5db9ff;
+  margin-bottom: -3%;
+  border-bottom: 1px solid #ff1f1f;
+}
+
+.height {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  color: #ffcb05;
+  margin-bottom: -3%;
+}
+
+.weight {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  color: #5db9ff;
+  margin-bottom: -3%;
+}
+
+.abilities {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  color: #ffcb05;
+  margin-bottom: -3%;
+}
+
+.items {
+  margin-top: -8%;
+  margin-right: 32%;
+  /* margin-bottom: -1%; */
+}
+
+.pokemon-list-container {
+  margin-bottom: 1%;
+}
