@@ -41,7 +41,6 @@ button {
   font-size: 25px;
   color: #5db9ff;
   margin-bottom: -3%;
-  border-bottom: 1px solid #ff1f1f;
 }
 
 .height {
@@ -76,4 +75,54 @@ button {
 
 .pokemon-list-container {
   margin-bottom: 1%;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  button {
+    border-width: 8px;
+    margin: 5px;
+    width: 30%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+  }
+
+  .poke-img {
+    margin-left: 12%;
+    width: 81%;
+  }
+
+  .img {
+    width: 70%;
+  }
+
+  .name {
+    font-size: 18px;
+    margin-bottom: -3%;
+    margin-top: 8%;
+  }
+
+  .height {
+    font-size: 18px;
+    margin-bottom: -3%;
+  }
+
+  .weight {
+    font-size: 18px;
+    margin-bottom: -3%;
+  }
+
+  .abilities {
+    font-size: 18px;
+    margin-bottom: -3%;
+  }
+
+  .items {
+    margin-right: 7%;
+  }
 }
